@@ -1,0 +1,298 @@
+.head{
+  display: flex;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+.header-left{
+display: flex;
+width: 40px;
+height: 35px;
+margin-left: 30px;
+}
+
+.logo{
+  width: 40px;
+  height: 35px;
+  margin-left: 50px;
+}
+
+.header-right{
+margin-left: 1000px;
+  }
+
+.header-right ul{
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: white;
+}
+
+.header-right li{
+  margin-right: 70px;
+
+}
+
+.kv{
+  background-image: url('./img/hill.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.title-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  line-height: 110px;
+  margin-top: 130px;
+}
+
+.main-title{
+  font-size: 110px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+
+}
+
+.main-subtitle{
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+}
+
+.container{
+padding: 100px 0px 0px;
+margin: 0px 70px;
+max-width: 1400px;
+}
+
+
+.container-wrap{
+  display: block;
+  padding: 90px 0px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+img{
+  width: 2000px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+h1{
+  font-size: 38px;
+  font-weight: 900;
+}
+
+h2{
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+p{
+  margin-top: 30px;
+}
+
+.about-right{
+  display: flex;
+}
+
+.plan{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.box{
+  width: 420px;
+  height: 180px;
+  border: solid 1px black;
+}
+
+h3{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.description{
+  text-align: center;
+  line-height: 1;
+  margin: 0px 10px;
+  padding-top: 10px;
+}
+
+.contact-container{
+}
+
+.box1{
+  font-size: 20px;
+  color: rgb(46, 45, 45);
+  width: 400px;
+  height: 40px;
+  border-radius: 3px;
+  border: solid 2px rgb(12, 12, 12) ;
+  margin: 20px auto;
+  padding-left: 10px;
+}
+
+.box2{
+  width: 400px;
+  height: 340px;
+  border-radius: 3px;
+  border: solid 2px rgba(40, 38, 38, 0.562);
+  margin: 20px auto;
+
+}
+
+button{
+  font-size: 25px;
+  color: white;
+  width: 140px;
+  height: 60px;
+  background-color: #223644;
+  margin-top: 30px;
+  margin-left: 580px;
+  text-align: center;
+}
+
+footer{
+  font-size: 14px;
+  height: 60px;
+  color: white;
+  align-items: center;
+  background-color: #223644;
+  text-align: center;
+  margin-top: 280px;
+  padding-top: 25px;
+}
+
+
+/*  */
+/* レスポンシブ対応 */
+/*  */
+@media screen and (max-width:780px){
+.title-wrap{
+  margin-top: 0px;
+}
+
+.main-title{
+  font-size: 50px;
+  line-height: 1;
+}
+
+.main-subtitle{
+  width: 300px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.container{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 50px;
+}
+
+.about-right{
+  display: block;
+  margin-top: 10px;
+}
+
+img{
+  width: 750px;
+  height: 470px;
+  margin-top: 30px;
+}
+
+.about{
+  text-align: center;
+}
+
+h1{
+  font-size: 28px;
+}
+
+.container-wrap{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0px;
+
+}
+
+h2{
+  text-align: center;
+}
+p{
+  line-height: 1;
+}
+
+.container{
+  text-align: center;
+  padding-top: 0px;
+}
+
+.plan{
+  display: block;
+}
+
+.box{
+  width: 720px;
+  height: 140px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+h3{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-container{
+  margin: 0px 10px 10px;
+}
+
+.box1{
+  width: 630px;
+  height: 35px;
+  text-align: start;
+}
+
+button{
+  margin-left: 30px;
+}
+
+
+}
+
+
+
+
+/* .test{
+  position: relative;
+  padding: 1em;
+  background-color: silver;
+  width: 300px;
+  text-align: center;
+}
+
+.test::before{
+  content: 'ラベル';
+  position: absolute;
+  top: 0;
+  left:0;
+  color:white;
+  padding: 0.2em;
+  background-color: pink;
+}
+
+/* .test::after{
+  content: 'Hola'
+} */ */
