@@ -179,6 +179,7 @@ footer{
 /* レスポンシブ対応 */
 /*  */
 @media screen and (max-width:780px){
+
 .title-wrap{
   margin-top: 0px;
 }
@@ -206,8 +207,8 @@ footer{
 }
 
 img{
-  width: 750px;
-  height: 470px;
+  width: 100%;
+  height: auto;
   margin-top: 30px;
 }
 
@@ -243,8 +244,9 @@ p{
 }
 
 .box{
-  width: 720px;
-  height: 140px;
+  width: 100%;
+  height: auto;
+
   padding-top: 10px;
   margin-bottom: 20px;
 
@@ -260,8 +262,8 @@ h3{
 }
 
 .box1{
-  width: 630px;
-  height: 35px;
+  width: 100%;
+  height: auto;
   text-align: start;
 }
 
