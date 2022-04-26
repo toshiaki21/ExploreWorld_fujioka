@@ -1,7 +1,7 @@
 .head{
+  height: 80px;
+  align-items: center;
   display: flex;
-  text-align: center;
-  padding-top: 20px;
 }
 
 
@@ -80,7 +80,7 @@ max-width: 1400px;
   margin-top: 50px;
 }
 
-img{
+picture{
   width: 2000px;
   height: 300px;
   margin-top: 50px;
@@ -179,20 +179,31 @@ footer{
 /* レスポンシブ対応 */
 /*  */
 @media screen and (max-width:780px){
+  .head{
+     
+  }
 
 .title-wrap{
   margin-top: 0px;
 }
 
+.kv{
+  height: 70vh;
+}
+
 .main-title{
   font-size: 50px;
   line-height: 1;
+  margin-top: -360px;
+
 }
 
 .main-subtitle{
   width: 300px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1;
+  text-align: center;
+  margin-top: 18px;
 }
 
 .container{
@@ -206,14 +217,15 @@ footer{
   margin-top: 10px;
 }
 
-img{
+.picture{
   width: 100%;
   height: auto;
   margin-top: 30px;
 }
 
-.about{
+#about{
   text-align: center;
+  margin-top: 40px;
 }
 
 h1{
@@ -223,7 +235,8 @@ h1{
 .container-wrap{
   margin-left: 10px;
   margin-right: 10px;
-  padding-top: 0px;
+  padding-top: -30px;
+  margin-bottom: 20px;
 
 }
 
@@ -271,6 +284,12 @@ button{
   margin-left: 30px;
 }
 
+.description{
+  margin-bottom: 20px;
+}
+
+.plan{
+}
 
 }
 
