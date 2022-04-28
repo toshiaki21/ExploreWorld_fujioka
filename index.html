@@ -9,31 +9,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-   <section class="kv">
-
-     <div class="head">
-       <div class="header-left">
-         <img class="logo" src="img/logo-white.png" alt="logo">
-        </div>
-
-       <div class="header-right">
-         <ul>
-          <li><a href="#abot">About</a></li>
-          <li><a href="#section-01">Plan</a></li>
-          <li><a href="#section-01">Contact</a></li>
-        </ul>
-       </div>
-
+  <section class="kv">
+    <header>
+      <!-- ヘッダーレフト -->
+      <div class="header-left">
+        <img src="./img/logo-white.png" alt="logo">
       </div>
-
-
+       <!-- ハンバーガー -->
+       <input type="checkbox" id="hamburger">
+       <label for="hamburger" class="bun">
+         <span class="pate"></span>
+       </label>
+      <!-- ヘッダーライト -->
+      <div class="header-right">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#plan">Plan</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    
     <div class="title-wrap">
       <h1 class="main-title">Explore<br>World</h1>
       <p class="main-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
-   </section>
+  </section>
+  
 
+  <main>
 <section>     
 <div class="container">
   <div class="about-right">
@@ -54,7 +58,7 @@
 
    <section class="container">
     <div>
-      <h1>
+      <h1 id="plan">
         Plan
       </h1>
       <div class="plan">
@@ -77,19 +81,20 @@
    </section>
 
    <section class="container">
-     <h1>
+     <h1 id="contact">  
        Contact
      </h1>
-     <div class="contact-container">
-      <div class="box1">Name</div>
-      <div class="box1">Email</div>
-      <div class="box2"></div>
-      <button type="submit">Submit</button>
-     </div>
-    </form>
+
+     <form>
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <textarea name="content" cols="40" rows="10" style="height:250px width: 525px;"></textarea>
+    <button type="submit">Submit</button>
+     </form>
   </section>
   </main>
 
+  
   <footer>
         <span><small>&copy;</small>2020 Website Title. All right reserved</span> 
   </footer>

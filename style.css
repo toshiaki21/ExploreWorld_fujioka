@@ -1,47 +1,42 @@
-.head{
+header{
   height: 80px;
-  align-items: center;
+  /* background-color: white; */
+  padding: 10px 20px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
 }
-
 
 .header-left{
-display: flex;
-width: 40px;
-height: 35px;
-margin-left: 30px;
-}
-
-.logo{
-  width: 40px;
+  width: 45px;
   height: 35px;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 .header-right{
-margin-left: 1000px;
-  }
+}
 
 .header-right ul{
   display: flex;
-  align-items: center;
-  font-size: 22px;
   color: white;
+  margin-right: 50px;
+  /* background-color: black; */
 }
-
 .header-right li{
-  margin-right: 70px;
-
+  margin-right: 50px;
+  font-size: 20px;
 }
 
-.kv{
+.kv {
   background-image: url('./img/hill.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 
-.title-wrap{
+.title-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +47,7 @@ margin-left: 1000px;
   margin-top: 130px;
 }
 
-.main-title{
+.main-title {
   font-size: 110px;
   font-weight: 900;
   color: white;
@@ -60,90 +55,114 @@ margin-left: 1000px;
 
 }
 
-.main-subtitle{
-  font-size: 30px;
-  font-weight: 900;
+.main-subtitle {
+  font-size: 26px;
   color: white;
+  margin-top: -10px;
 }
 
-.container{
-padding: 100px 0px 0px;
-margin: 0px 70px;
-max-width: 1400px;
+.container {
+  padding: 100px 0px 0px;
+  margin: 0px 70px;
 }
 
 
-.container-wrap{
+.container-wrap {
   display: block;
   padding: 90px 0px;
   margin-left: 40px;
   margin-top: 50px;
 }
 
-picture{
+.picture {
   width: 2000px;
   height: 300px;
   margin-top: 50px;
 }
 
-h1{
+h1 {
   font-size: 38px;
   font-weight: 900;
 }
 
-h2{
+h2 {
   font-size: 30px;
   margin-top: 10px;
 }
 
-p{
+p {
   margin-top: 30px;
 }
 
-.about-right{
+.about-right {
   display: flex;
 }
 
-.plan{
+.plan {
   display: flex;
   justify-content: space-around;
   margin-top: 70px;
 }
 
-.box{
+.box {
   width: 420px;
   height: 180px;
   border: solid 1px black;
 }
 
-h3{
+h3 {
   text-align: center;
   font-size: 30px;
   margin-top: 20px;
 }
 
-.description{
+.description {
   text-align: center;
   line-height: 1;
   margin: 0px 10px;
   padding-top: 10px;
 }
 
-.contact-container{
+
+/* フォームタグ */
+form {
+  margin-top: 60px;
 }
 
-.box1{
+form input {
+  color: #223644;
+  border: solid 2px rgb(12, 12, 12);
+  width: 550px;
+  height: 40px;
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+form textarea {
+  border-radius: 5px;
+  margin: 20px auto;
+  border: solid 2px rgb(12, 12, 12);
+  margin: 20px auto;
+  display: block;
+  width: 550px;
+  height: 400px;
+}
+
+
+.box1 {
   font-size: 20px;
   color: rgb(46, 45, 45);
   width: 400px;
   height: 40px;
   border-radius: 3px;
-  border: solid 2px rgb(12, 12, 12) ;
+  border: solid 2px rgb(12, 12, 12);
   margin: 20px auto;
   padding-left: 10px;
 }
 
-.box2{
+.box2 {
   width: 400px;
   height: 340px;
   border-radius: 3px;
@@ -152,7 +171,7 @@ h3{
 
 }
 
-button{
+button {
   font-size: 25px;
   color: white;
   width: 140px;
@@ -163,7 +182,7 @@ button{
   text-align: center;
 }
 
-footer{
+footer {
   font-size: 14px;
   height: 60px;
   color: white;
@@ -174,146 +193,204 @@ footer{
   padding-top: 25px;
 }
 
+button {
+  cursor: pointer;
+}
+
+
+
+
 
 /*  */
 /* レスポンシブ対応 */
 /*  */
-@media screen and (max-width:780px){
-  .head{
-     
+@media screen and (max-width:780px) {
+header{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+}
+.header-left{
+    width: 32px;
+  height: auto;
+}
+
+
+.header-right {
+  font-size: 13px;
+  position: fixed;
+  margin-right: 10px;
+  top: 85px;
+  right: -210px;
+    /* right: -1800px; */
+  color: white;
+  transition: right 1s ease;
   }
 
-.title-wrap{
-  margin-top: 0px;
-}
-
-.kv{
-  height: 70vh;
-}
-
-.main-title{
-  font-size: 50px;
-  line-height: 1;
-  margin-top: -360px;
-
-}
-
-.main-subtitle{
-  width: 300px;
-  font-size: 20px;
-  line-height: 1;
-  text-align: center;
-  margin-top: 18px;
-}
-
-.container{
-  margin-left: 0px;
+.header-right ul{
+  display: block;
   margin-right: 0px;
-  padding-top: 50px;
 }
 
-.about-right{
+.header-right li{
+  margin-right: 0px;
+}
+
+  .title-wrap {
+    margin-top: 0px;
+  }
+
+  .kv {
+    height: 70vh;
+  }
+
+  .main-title {
+    font-size: 50px;
+    line-height: 1;
+    margin-top: -360px;
+  }
+
+  .main-subtitle {
+    width: 300px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 18px;
+  }
+
+  .container {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 50px;
+  }
+
+  .about-right {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .picture {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  #about {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .container-wrap {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: -30px;
+    margin-bottom: 20px;
+
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    line-height: 1;
+  }
+
+  .container {
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  .plan {
+    display: block;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .contact-container {
+    margin: 0px 10px 10px;
+  }
+
+  .box1 {
+    width: 100%;
+    height: auto;
+    text-align: start;
+  }
+
+  button {
+    margin-left: 30px;
+  }
+
+  .description {
+    margin-bottom: 20px;
+  }
+
+input{
+  text-align: left;
+  padding-left: 10px;
+}
+
+textarea{
+  
+}
+
+
+
+.bun{
+  width: 30px;
+  height: 30px;
   display: block;
-  margin-top: 10px;
+  cursor: pointer;
 }
-
-.picture{
+.bun .pate,
+.bun .pate::before,
+.bun .pate::after{
   width: 100%;
-  height: auto;
-  margin-top: 30px;
-}
-
-#about{
-  text-align: center;
-  margin-top: 40px;
-}
-
-h1{
-  font-size: 28px;
-}
-
-.container-wrap{
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-top: -30px;
-  margin-bottom: 20px;
-
-}
-
-h2{
-  text-align: center;
-}
-p{
-  line-height: 1;
-}
-
-.container{
-  text-align: center;
-  padding-top: 0px;
-}
-
-.plan{
+  height: 5px;
   display: block;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 1s ease;
 }
-
-.box{
-  width: 100%;
-  height: auto;
-
-  padding-top: 10px;
-  margin-bottom: 20px;
-
-}
-
-h3{
-  margin-top: 10px;
-  text-align: center;
-}
-
-.contact-container{
-  margin: 0px 10px 10px;
-}
-
-.box1{
-  width: 100%;
-  height: auto;
-  text-align: start;
-}
-
-button{
-  margin-left: 30px;
-}
-
-.description{
-  margin-bottom: 20px;
-}
-
-.plan{
-}
-
-}
-
-
-
-
-/* .test{
+.bun .pate{
   position: relative;
-  padding: 1em;
-  background-color: silver;
-  width: 300px;
-  text-align: center;
+  top: calc(50% - 2px);
 }
-
-.test::before{
-  content: 'ラベル';
+.bun .pate::before,
+.bun .pate::after{
   position: absolute;
-  top: 0;
-  left:0;
-  color:white;
-  padding: 0.2em;
-  background-color: pink;
+  content: '';
 }
-
-/* .test::after{
-  content: 'Hola'
-} */ */
+.bun .pate::before{
+  top: -9px;
+}
+.bun .pate::after{
+  top: 9px;
+}
+#hamburger:checked + .bun .pate{
+  background-color: transparent;
+}
+#hamburger:checked + .bun .pate::before{
+  transform: rotate(45deg) translate(5px,5px);
+}
+#hamburger:checked + .bun .pate::after{
+  transform: rotate(-45deg) translate(7px,-8px);
+}
+#hamburger:checked ~ .header-right{
+  right: 0;
+}
+}
